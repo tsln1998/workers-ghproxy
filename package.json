@@ -1,0 +1,41 @@
+{
+  "name": "workers-ghproxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev -l",
+    "preview": "wrangler dev",
+    "deploy": "wrangler publish",
+    "build": "tsc --outDir ./dist"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "sunder": "^0.10.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230404.0",
+    "@types/lodash": "^4.14.194",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-google": "^0.14.0",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "google"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+      "dist/*"
+    ],
+    "root": true
+  }
+}

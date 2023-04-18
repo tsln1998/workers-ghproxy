@@ -1,0 +1,9 @@
+name = "workers-ghproxy"
+main = "./dist/workers.js"
+compatibility_date = "2022-08-04"
+compatibility_flags = [
+    "streams_enable_constructors"
+]
+
+[build]
+command = "yarn build"

@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Node.js
+/yarn.lock
+/node_modules
+
+# IDE
+/.code
+/.idea
+
+# Build
+/dist
